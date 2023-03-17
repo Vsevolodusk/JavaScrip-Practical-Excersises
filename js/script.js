@@ -153,25 +153,27 @@
 // }
 // console.log(summ);
 // let counter = 0;
-// while(counter <= 100){
-
-//         if(counter % 3 === 0){
-//             console.log("fizz")
-//         }
-//         else if(counter % 5 === 0){
-//             console.log("buzz")
-//         }
-//         else {
-//             console.log(counter)
-//     }
-//     counter++
-// }
-// for (let counter = 0; counter <= 100; counter++) {
-//   if (counter % 3 === 0) {
+// while (counter <= 100) {
+//   if (counter % 3 === 0 && counter % 5 === 0) {
+//     console.log("fizzbuzz");
+//   } else if (counter % 3 === 0) {
 //     console.log("fizz");
 //   } else if (counter % 5 === 0) {
 //     console.log("buzz");
 //   } else {
+//     console.log(counter);
+//   }
+//   counter++;
+// }
+//  for (let counter = 0; counter <= 100; counter++) {
+// if (counter % 3 === 0 && counter % 5 === 0) {
+//     console.log("fizzbuzz");
+//   }
+//  else if (counter % 3 === 0) {
+//     console.log("fizz");
+//   } else if (counter % 5 === 0) {
+//     console.log("buzz");
+//   }  else {
 //     console.log(counter);
 //   }
 // }
@@ -199,6 +201,7 @@ function counting(number1, number2 , counter) {
       alert("GREAT JOB MAN");
       alert(`Right Answers : ${counter} out 50`);
       number1 = Number(prompt("Enter Number in range 1-10"));
+      number2 = Math.round(Math.random() * 10);    
     } else {
       alert("nope! =(");
       number1 = Number(prompt("Enter Number in range 1-10"));
